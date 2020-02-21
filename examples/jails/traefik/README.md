@@ -2,7 +2,7 @@
 
 If you want to block IPs that have HTTP Basic Authentication failures on [Traefik](https://traefik.io/), and ban them with iptables, read the instructions below.
 
-First you have to configure your Traefik instance to write the [access logs](https://docs.traefik.io/configuration/logs/#access-logs) into a log file on host and specifiy users for [Basic Authentication](https://docs.traefik.io/configuration/entrypoints/#basic-authentication). You can use the following compose as a quick example :
+First you have to configure your Traefik instance to write the [access logs](https://docs.traefik.io/observability/access-logs/) into a log file on host and specifiy users for [Basic Authentication](https://docs.traefik.io/middlewares/basicauth/). You can use the following compose as a quick example :
 
 ```
 version: "3.2"
